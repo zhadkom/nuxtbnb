@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "%s" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -17,7 +17,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/maps.client"],
+  plugins: ["~/plugins/maps.client", "~/plugins/dataApi"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -34,5 +34,11 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+
+  privateRuntimeConfig: {
+    MAPS_API_KEY: process.env.MAPS_API_KEY,
+    ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
+    ALGOLIA_API_KEY: process.env.ALGOLIA_API_KEY
+  }
 };
