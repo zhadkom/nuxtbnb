@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap">
-    <home-card class="m-4" v-for="h in houses" :key="h.objectID" :home="h"></home-card>
+    <home-card v-for="h in houses" :key="h.objectID" class="m-4" :home="h"></home-card>
   </div>
 </template>
 
@@ -12,6 +12,11 @@ export default {
   components: {
     HomeCard
   },
+  data() {
+    return {
+      houses: homes.slice(0, 3)
+    };
+  },
   head() {
     return {
       title: "Home",
@@ -22,11 +27,6 @@ export default {
           hid: "description"
         }
       ]
-    };
-  },
-  data() {
-    return {
-      houses: homes.slice(0, 3)
     };
   }
 };

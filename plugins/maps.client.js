@@ -1,5 +1,5 @@
 export default function (context, inject) {
-  const API_KEY = "AIzaSyDvEXgafQB9WSINCEfGtEmInWirIxXktpM";
+  const API_KEY = context.$config.MAPS_API_KEY;
   let mapLoaded = false;
   let mapWaiting = null;
 

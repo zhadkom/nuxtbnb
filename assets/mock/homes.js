@@ -64,17 +64,7 @@ export default [
     note: "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
     reviewCount: 56,
     reviewValue: 4.82,
-    features: [
-      "Coffee Maker",
-      "Smoke Alarm",
-      "Stove",
-      "Toiletries",
-      "Self Check-In",
-      "Free Parking",
-      "Washer",
-      "Dryer",
-      "Kitchen"
-    ],
+    features: ["Coffee Maker", "Smoke Alarm", "Stove", "Toiletries", "Self Check-In", "Free Parking", "Washer", "Dryer", "Kitchen"],
     pricePerNight: 219,
     location: {
       address: "521 E Lionshead Circle",
@@ -117,18 +107,7 @@ export default [
     note: "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
     reviewCount: 186,
     reviewValue: 4.71,
-    features: [
-      "Smoke Alarm",
-      "Stove",
-      "Wifi",
-      "Toiletries",
-      "Self Check-In",
-      "Free Parking",
-      "Washer",
-      "Dryer",
-      "TV",
-      "Kitchen"
-    ],
+    features: ["Smoke Alarm", "Stove", "Wifi", "Toiletries", "Self Check-In", "Free Parking", "Washer", "Dryer", "TV", "Kitchen"],
     pricePerNight: 189,
     location: {
       address: "12 Vail Rd",

@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import homes from "@/assets/mock/homes.js";
 export default {
   // TODO ADD GOOGLE MAPS PLUGIN 0_0
   head() {
@@ -21,20 +20,12 @@ export default {
       title: this.home.title
     };
   },
-  data() {
+
+  async asyncData({ params, $dataApi }) {
+    const home = await $dataApi.getHome(params.id);
     return {
-      home: {}
+      home
     };
-  },
-
-  // asyncData($maps) {
-  //   $maps.showMap(this.$refs.map, this.home._geoloc.lat, this.home._geoloc.lng);
-  // },
-
-  created() {
-    this.home = homes.find((home) => {
-      return home.objectID === this.$route.params.id;
-    });
   },
 
   mounted() {
