@@ -36,7 +36,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  privateRuntimeConfig: {
+  publicRuntimeConfig: {
     MAPS_API_KEY: process.env.MAPS_API_KEY,
     ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
     ALGOLIA_API_KEY: process.env.ALGOLIA_API_KEY
